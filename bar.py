@@ -3,7 +3,7 @@ import pygal
 def function():
 	"""bar graph"""
 	line_chart = pygal.Bar()
-	line_chart.title = 'Browser usage evolution (in %)'
+	line_chart.title = 'Number of population, aged 6 years and over by reading'
 	line_chart.x_labels = ['กรุงเทพมหานคร','ภาคกลาง','ภาคตะวันออกเฉียงเหนือ','ภาคเหนือ','ภาคใต้']
 	line_chart.add('ชาย', [3669631, 7015293, 6150197, 4025286, 3063481])
 	line_chart.add('หญิง',  [3843461, 6930728, 6518678, 3976164, 3215648])
