@@ -115,43 +115,84 @@ def main():
 
     north_pie = pygal.Pie(inner_radius=.4)
     north_pie.title = 'Number of population, reading and unreading , age 6-14 yearsold'
-    north_pie.add('ชาย อ่าน', int(listmen_reading[9]))
-    north_pie.add('หญิง อ่าน', int(listwomen_reading[9]))
-    north_pie.add('ชาย ไม่อ่าน', int(listmen_unreading[9]))
-    north_pie.add('หญิง ไม่อ่าน',int(listwomen_unreading[9]))
-    north_pie.render_to_file('bkk.svg')
+    north_pie.add('ชาย อ่าน', int(listmen_reading[42]))
+    north_pie.add('หญิง อ่าน', int(listwomen_reading[42]))
+    north_pie.add('ชาย ไม่อ่าน', int(listmen_unreading[42]))
+    north_pie.add('หญิง ไม่อ่าน',int(listwomen_unreading[42]))
+    north_pie.render_to_file('north.svg')
 
     north_pie2 = pygal.Pie(inner_radius=.4)
     north_pie2.title = 'Number of population, reading and unreading , age 15-24 yearsold'
-    north_pie2.add('ชาย อ่าน', int(listmen_reading[10]))
-    north_pie2.add('หญิง อ่าน', int(listwomen_reading[10]))
-    north_pie2.add('ชาย ไม่อ่าน', int(listmen_unreading[10]))
-    north_pie2.add('หญิง ไม่อ่าน',int(listwomen_unreading[10]))
-    north_pie2.render_to_file('bkk2.svg')
+    north_pie2.add('ชาย อ่าน', int(listmen_reading[43]))
+    north_pie2.add('หญิง อ่าน', int(listwomen_reading[43]))
+    north_pie2.add('ชาย ไม่อ่าน', int(listmen_unreading[43]))
+    north_pie2.add('หญิง ไม่อ่าน',int(listwomen_unreading[43]))
+    north_pie2.render_to_file('north2.svg')
 
     north_pie3 = pygal.Pie(inner_radius=.4)
     north_pie3.title = 'Number of population, reading and unreading , age 25-39 yearsold'
-    north_pie3.add('ชาย อ่าน', int(listmen_reading[11]))
-    north_pie3.add('หญิง อ่าน', int(listwomen_reading[11]))
-    north_pie3.add('ชาย ไม่อ่าน', int(listmen_unreading[11]))
-    north_pie3.add('หญิง ไม่อ่าน',int(listwomen_unreading[11]))
-    north_pie3.render_to_file('bkk3.svg')
+    north_pie3.add('ชาย อ่าน', int(listmen_reading[44]))
+    north_pie3.add('หญิง อ่าน', int(listwomen_reading[44]))
+    north_pie3.add('ชาย ไม่อ่าน', int(listmen_unreading[44]))
+    north_pie3.add('หญิง ไม่อ่าน',int(listwomen_unreading[44]))
+    north_pie3.render_to_file('north3.svg')
 
     north_pie4 = pygal.Pie(inner_radius=.4)
     north_pie4.title = 'Number of population, reading and unreading , age 40-59 yearsold'
-    north_pie4.add('ชาย อ่าน', int(listmen_reading[12]))
-    north_pie4.add('หญิง อ่าน', int(listwomen_reading[12]))
-    north_pie4.add('ชาย ไม่อ่าน', int(listmen_unreading[12]))
-    north_pie4.add('หญิง ไม่อ่าน',int(listwomen_unreading[12]))
-    north_pie4.render_to_file('bkk4.svg')
+    north_pie4.add('ชาย อ่าน', int(listmen_reading[45]))
+    north_pie4.add('หญิง อ่าน', int(listwomen_reading[45]))
+    north_pie4.add('ชาย ไม่อ่าน', int(listmen_unreading[45]))
+    north_pie4.add('หญิง ไม่อ่าน',int(listwomen_unreading[45]))
+    north_pie4.render_to_file('north4.svg')
 
     north_pie5 = pygal.Pie(inner_radius=.4)
     north_pie5.title = 'Number of population, reading and unreading , age 60 and over yearsold'
-    north_pie5.add('ชาย อ่าน', int(listmen_reading[13]))
-    north_pie5.add('หญิง อ่าน', int(listwomen_reading[13]))
-    north_pie5.add('ชาย ไม่อ่าน', int(listmen_unreading[13]))
-    north_pie5.add('หญิง ไม่อ่าน',int(listwomen_unreading[13]))
-    north_pie5.render_to_file('bkk5.svg')
+    north_pie5.add('ชาย อ่าน', int(listmen_reading[46]))
+    north_pie5.add('หญิง อ่าน', int(listwomen_reading[46]))
+    north_pie5.add('ชาย ไม่อ่าน', int(listmen_unreading[46]))
+    north_pie5.add('หญิง ไม่อ่าน',int(listwomen_unreading[46]))
+    north_pie5.render_to_file('north5.svg')
 
+    south_pie = pygal.Pie(inner_radius=.4)
+    south_pie.title = 'Number of population, reading and unreading , age 6-14 yearsold'
+    south_pie.add('ชาย อ่าน', int(listmen_reading[71]))
+    south_pie.add('หญิง อ่าน', int(listwomen_reading[71]))
+    south_pie.add('ชาย ไม่อ่าน', int(listmen_unreading[71]))
+    south_pie.add('หญิง ไม่อ่าน',int(listwomen_unreading[71]))
+    south_pie.render_to_file('south.svg')
+
+    south_pie2 = pygal.Pie(inner_radius=.4)
+    south_pie2.title = 'Number of population, reading and unreading , age 15-24 yearsold'
+    south_pie2.add('ชาย อ่าน', int(listmen_reading[72]))
+    south_pie2.add('หญิง อ่าน', int(listwomen_reading[72]))
+    south_pie2.add('ชาย ไม่อ่าน', int(listmen_unreading[72]))
+    south_pie2.add('หญิง ไม่อ่าน',int(listwomen_unreading[72]))
+    south_pie2.render_to_file('south2.svg')
+
+    south_pie3 = pygal.Pie(inner_radius=.4)
+    south_pie3.title = 'Number of population, reading and unreading , age 25-39 yearsold'
+    south_pie3.add('ชาย อ่าน', int(listmen_reading[73]))
+    south_pie3.add('หญิง อ่าน', int(listwomen_reading[73]))
+    south_pie3.add('ชาย ไม่อ่าน', int(listmen_unreading[73]))
+    south_pie3.add('หญิง ไม่อ่าน',int(listwomen_unreading[73]))
+    south_pie3.render_to_file('south3.svg')
+
+    south_pie4 = pygal.Pie(inner_radius=.4)
+    south_pie4.title = 'Number of population, reading and unreading , age 40-59 yearsold'
+    south_pie4.add('ชาย อ่าน', int(listmen_reading[74]))
+    south_pie4.add('หญิง อ่าน', int(listwomen_reading[74]))
+    south_pie4.add('ชาย ไม่อ่าน', int(listmen_unreading[74]))
+    south_pie4.add('หญิง ไม่อ่าน',int(listwomen_unreading[74]))
+    south_pie4.render_to_file('south4.svg')
+
+    south_pie5 = pygal.Pie(inner_radius=.4)
+    south_pie5.title = 'Number of population, reading and unreading , age 60 and over yearsold'
+    south_pie5.add('ชาย อ่าน', int(listmen_reading[75]))
+    south_pie5.add('หญิง อ่าน', int(listwomen_reading[75]))
+    south_pie5.add('ชาย ไม่อ่าน', int(listmen_unreading[75]))
+    south_pie5.add('หญิง ไม่อ่าน',int(listwomen_unreading[75]))
+    south_pie5.render_to_file('south5.svg')
+    
 main()
+
 
