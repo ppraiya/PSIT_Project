@@ -25,6 +25,7 @@ def main():
         listwomen_reading.append(i[7])
         listmen_unreading.append(i[10])
         listwomen_unreading.append(i[11])
+    
     #Number of population, read and unread
     line_chart = pygal.Bar()
     line_chart.title = 'Number of population, Show number of read and unread'
@@ -33,7 +34,6 @@ def main():
     line_chart.add('Unread',  [int(unread_list[8]), int(unread_list[24]), int(unread_list[41]), int(unread_list[56]), int(unread_list[70])])
     line_chart.render_to_file('first.svg')
 
-    
     #Number of population, aged 6 years and over by reading
     line_chart = pygal.StackedLine(fill=True, interpolate='cubic', style=DarkStyle)
     line_chart = pygal.Bar()
@@ -90,7 +90,6 @@ def main():
     bkk_pie_ur4.add('ชาย', int(listmen_unreading[12]))
     bkk_pie_ur4.add('หญิง',int(listwomen_unreading[12]))
     bkk_pie_ur4.render_to_file('bkk4_ur.svg')
-
 
     bkk_pie5 = pygal.Pie(inner_radius=.4)
     bkk_pie5.title = 'Number of population in bangkok, reading, age 60 and over yearsold'
@@ -259,7 +258,6 @@ def main():
     north_e_pie4_ur.add('ชาย', int(listmen_unreading[60]))
     north_e_pie4_ur.add('หญิง',int(listwomen_unreading[60]))
     north_e_pie4_ur.render_to_file('north_e4_ur.svg')
-
 
     north_e_pie5 = pygal.Pie(inner_radius=.4)
     north_e_pie5.title = 'Number of population in north east region, reading, age 60 and over yearsold'
