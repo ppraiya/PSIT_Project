@@ -1,0 +1,25 @@
+"""Project 2016: Information Threat"""
+import pygal
+import csv
+from pygal import *
+from pygal.style import DarkStyle
+import uuid
+import os
+def main():
+    """test"""
+    file = open('D:/project/1.csv')
+    data = (csv.reader(file))
+    lst = []
+    for i in data:
+           lst.append(i[5])
+    line_chart = pygal.StackedLine(fill=True, interpolate='cubic', style=DarkStyle)
+    line_chart = pygal.Bar()
+    line_chart.title = ' Number of population, aged 6 years and over by reading'
+    line_chart.x_labels = ['กรุงเทพมหานคร','ภาคกลาง','ภาคเหนือ','ภาคตะวันออกเฉียงเหนือ','ภาคใต้']
+    line_chart.add('6-14', [int(lst[9]), int(lst[26]), int(lst[42]), int(lst[57]),   int(lst[71])])
+    line_chart.add('15-24',  [int(lst[10]), int(lst[27]), int(lst[43]), int(lst[58]), int(lst[72])])
+    line_chart.add('25-39',  [int(lst[11]), int(lst[28]), int(lst[44]), int(lst[59]), int(lst[73])])
+    line_chart.add('40-59',  [int(lst[12]), int(lst[29]), int(lst[45]), int(lst[60]), int(lst[74])])
+    line_chart.add('60andover', [int(lst[13]), int(lst[30]), int(lst[46]), int(lst[61]), int(lst[75])])
+    line_chart.render_to_file('bar_area_1.svg')
+main()
