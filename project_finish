@@ -1,4 +1,4 @@
-"""Project 2016: Information Threat"""
+"""Project 2016: Statistics Analysis reading of population in Thailand , in 2015"""
 import pygal
 import csv
 from pygal import *
